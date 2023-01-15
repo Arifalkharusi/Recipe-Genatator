@@ -20,13 +20,13 @@ body {
   flex-direction: column;
   padding: 20px;
   text-align: center;
+  gap: 20px;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  margin-bottom: 20px;
 }
 
 .hint {
@@ -75,17 +75,60 @@ body {
   outline: none;
 }
 
-#add {
+#add,
+.generate {
   cursor: pointer;
   border: none;
   padding: 10px;
-  background-color: rgb(125, 208, 0);
-  width: 50px;
+  background-color: rgb(0, 160, 208);
+  min-width: 50px;
   transition: all 0.15s;
   color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-#add:hover {
+#add:hover,
+.generate:hover {
   transform: scale(1.1);
   transition: all 0.15s;
+}
+.generate {
+  margin-bottom: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-img-top img {
+  width: 100%;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card-footer {
+  margin-top: 1rem;
 }
